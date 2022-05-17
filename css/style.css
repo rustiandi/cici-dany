@@ -1,0 +1,715 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+/*--------------------------------------------------------------
+font-family: 'Allura', cursive;
+font-family: 'Montserrat', sans-serif;
+--------------------------------------------------------------*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-custom {
+    color: #fff;
+    background-color: #989d92;
+    border-color: #989d92;
+}
+
+.btn-custom:hover {
+    color: #fff;
+    background-color: #848a7d;
+    border-color: #acb0a7;
+}
+
+.btn-check:focus+.btn-custom,
+.btn-custom:focus {
+    color: #fff;
+    background-color: #848a7d;
+    border-color: #acb0a7;
+    box-shadow: 0 0 0 0.25rem rgba(152, 157, 146, 0.5);
+}
+
+.btn-check:checked+.btn-custom,
+.btn-check:active+.btn-custom,
+.btn-custom:active,
+.btn-custom.active,
+.show>.btn-custom.dropdown-toggle {
+    color: #fff;
+    background-color: #acb0a7;
+    border-color: #acb0a7;
+}
+
+.btn-check:checked+.btn-custom:focus,
+.btn-check:active+.btn-custom:focus,
+.btn-custom:active:focus,
+.btn-custom.active:focus,
+.show>.btn-custom.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem rgba(152, 157, 146, 0.5);
+}
+
+.btn-custom:disabled,
+.btn-custom.disabled {
+    color: #fff;
+    background-color: #989d92;
+    border-color: #989d92;
+}
+
+.form-control {
+    font-family: 'Montserrat', sans-serif;
+    color: #666;
+}
+
+.form-select {
+    font-family: 'Montserrat', sans-serif;
+    color: #666;
+}
+
+.form-floating label {
+    color: #666;
+}
+
+.form-control:focus {
+    border-color: #acb0a7;
+    box-shadow: 0 0 0 0.25rem rgba(152, 157, 146, 0.25);
+}
+
+.form-select:focus {
+    border-color: #acb0a7;
+    box-shadow: 0 0 0 0.25rem rgba(152, 157, 146, 0.25);
+}
+
+.header {
+    position: relative;
+    text-align: center;
+    background: url(../img/cover.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.header .inner-header {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.header .inner-header .box-wedding {
+    width: 100%;
+    margin: 0 0 32px 0;
+}
+
+.header .inner-header p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 8px 0 8px 0;
+}
+
+.header .inner-header h1 {
+    font-family: 'Allura', cursive;
+    font-size: 3rem;
+    color: #fff;
+    margin: 0;
+}
+
+.header .flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+}
+
+.header .waves {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-bottom: -3px;
+}
+
+.quotes {
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.quotes .container {
+    padding: 1rem;
+    text-align: center;
+}
+
+.quotes .container hr {
+    height: 7px;
+    background-color: transparent;
+    border-top: 2px solid #666;
+    border-bottom: 3px solid #666;
+    width: 50%;
+    margin: 0 auto 2rem auto;
+}
+
+.quotes .container p {
+    color: #666;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.img-quotes {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-quotes .qoute-img {
+    height: 300px;
+    background: url(../img/quotes.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-quotes .waves1 {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-top: -3px;
+}
+
+.img-quotes .waves2 {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-bottom: -3px;
+}
+
+.bride {
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.bride .container {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.bride .container .row {
+    padding: 1px;
+}
+
+.bride .container .row .bride-img {
+    padding: 1px;
+}
+
+.bride .container .row .bride-img img {
+    width: 100%;
+}
+
+.bride .container .row .bride-title h1 {
+    color: #989d92;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.bride .container .row .bride-title p {
+    color: #666;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    margin: 0;
+}
+
+.date {
+    position: relative;
+    background: url(../img/date.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.date .waves1 {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-top: -3px;
+}
+
+.date .waves2 {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-bottom: -3px;
+}
+
+.date .container {
+    padding: 3rem 2rem;
+}
+
+.date .container .card {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.date .container .card h1 {
+    color: #989d92;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+}
+
+.date .container .card p {
+    color: #666;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.rsvp {
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.rsvp .container {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.rsvp .container h1 {
+    font-size: 32px;
+    margin-bottom: 1rem;
+    color: #989d92;
+}
+
+.rsvp .container p {
+    font-size: 14px;
+    margin: 0;
+    color: #666;
+}
+
+.rsvp #finisRsvp {
+    display: none;
+}
+
+.gift {
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.gift .container {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.gift .container i {
+    font-size: 3.5rem;
+    color: #989d92;
+}
+
+.gift .container h1 {
+    font-size: 32px;
+    margin: 1rem 0 8px 0;
+    color: #989d92;
+}
+
+.gift .container p {
+    font-size: 14px;
+    margin: 0 0 2rem 0;
+    color: #666;
+}
+
+.btn-icon {
+    padding: 0.5rem 1rem;
+    font-size: 2.2rem;
+    border-radius: 0.5rem;
+}
+
+.countdown {
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.countdown .container {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.countdown .container p {
+    font-size: 18px;
+    margin: 0;
+    color: #666;
+    text-align: center;
+}
+
+.countdown .container table {
+    margin: auto;
+}
+
+.countdown .container .tg-qj3h {
+    font-size: 36px;
+    text-align: center;
+    vertical-align: center;
+    padding: 8px 8px 0 8px;
+    color: #989d92;
+}
+
+.countdown .container .tg-6nwz {
+    font-size: 14px;
+    text-align: center;
+    vertical-align: center;
+    color: #666;
+}
+
+.countdown .container .tg-baqh {
+    text-align: center;
+    vertical-align: center;
+}
+
+.gallery {
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.gallery .container {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+}
+
+.gallery .container h1 {
+    font-size: 32px;
+    margin-bottom: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #989d92;
+}
+
+.wishes {
+    position: relative;
+    background-color: #989d92;
+    overflow: hidden;
+}
+
+.wishes .container {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.wishes .container .card {
+    border: none;
+    border-radius: 20px;
+}
+
+.wishes .container .card .card-body h1 {
+    font-size: 24px;
+    margin-bottom: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #989d92;
+    text-align: center;
+}
+
+.wishes .container .card .card-body p {
+    font-size: 14px;
+    margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #666;
+    text-align: center;
+}
+
+.wishes .container .wishes-message {
+    overflow: scroll;
+    overflow-x: hidden;
+    max-height: 80vh;
+    padding-top: 0.75rem;
+}
+
+.wishes .container .wishes-message .list-group-item {
+    padding: 0.75rem;
+    color: #fff;
+    background-color: transparent;
+    border: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wishes .container .wishes-message .list-group-item h5 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.wishes .container .wishes-message .list-group-item p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.wishes-closing {
+    padding: 2rem 0 0 0;
+    text-align: center;
+}
+
+.wishes-closing p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 8px 0 0 0;
+}
+
+.wishes-closing h1 {
+    font-family: 'Allura', cursive;
+    font-size: 3rem;
+    color: #fff;
+    margin: 0;
+}
+
+.wishes .waves {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-bottom: -3px;
+}
+
+.page-footer {
+    background-color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.page-footer p {
+    font-size: 14px;
+    margin: 0;
+    color: #666;
+}
+
+.page-footer img {
+    height: 30px;
+    margin-bottom: 8px;
+}
+
+.page-footer .container .list-inline .list-inline-item a {
+    color: #989d92;
+}
+
+.page-footer .footer-copyright {
+    font-size: 14px;
+    color: #666;
+}
+
+.page-footer .footer-copyright a {
+    font-size: 14px;
+    color: #666;
+    text-decoration: none;
+}
+
+#walletModal .modal-header {
+    border: none;
+}
+
+#walletModal .bank-acc {
+    max-width: 300px;
+    margin: 0 auto 0 auto;
+}
+
+#walletModal .logo-bank {
+    text-align: right;
+    margin-bottom: 8px;
+}
+
+#walletModal .logo-bank img {
+    width: 80px;
+}
+
+#walletModal .name-rek p {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+#walletModal .no-rek {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+#walletModal .no-rek p {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 8px;
+    color: #000;
+    ;
+}
+
+#giftModal .modal-header {
+    border: none;
+}
+
+#giftModal h1 {
+    font-size: 20px;
+    margin-bottom: 2rem;
+    color: #000;
+    text-align: center;
+}
+
+#giftModal p {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #000;
+    text-align: center;
+}
+
+#giftModal .lokasi-gift {
+    max-width: 300px;
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
+
+#giftModal .name-gift {
+    margin-bottom: 2rem;
+}
+
+#giftModal .name-gift p {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+ALL
+--------------------------------------------------------------*/
+
+#weddingModal .modal-dialog .modal-content {
+    background: linear-gradient(180deg, rgba(0, 4, 10, 0.36) 68%, #000c0f 100%), url(../img/popup.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#weddingModal .modal-dialog .modal-content .modal-body {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-around !important;
+    text-align: center;
+}
+
+#weddingModal .modal-dialog .modal-content .modal-body .modal-bride h1 {
+    font-family: 'Allura', cursive;
+    font-size: 3rem;
+    color: #fff;
+    margin: 0;
+}
+
+#weddingModal .modal-dialog .modal-content .modal-body .modal-bride p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0;
+}
+
+#weddingModal .modal-dialog .modal-content .modal-body .modal-guest p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+#weddingModal .modal-dialog .modal-content .modal-body .modal-guest h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+
+.btn-white {
+    color: #212529;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.btn-white:hover {
+    color: #212529;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.btn-check:focus+.btn-white,
+.btn-white:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #fff;
+    box-shadow: 0 0 0 0.25rem rgba(152, 157, 146, 0.5);
+}
+
+.btn-check:checked+.btn-white,
+.btn-check:active+.btn-white,
+.btn-white:active,
+.btn-white.active,
+.show>.btn-white.dropdown-toggle {
+    color: #212529;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.btn-check:checked+.btn-white:focus,
+.btn-check:active+.btn-white:focus,
+.btn-white:active:focus,
+.btn-white.active:focus,
+.show>.btn-white.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem rgba(152, 157, 146, 0.5);
+}
+
+.btn-white:disabled,
+.btn-white.disabled {
+    color: #212529;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: #fff;
+}
+
+.preloader .loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.preloader .loading img {
+    width: 100%;
+}
+
+.turut-mengundang {
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.turut-mengundang .container {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.turut-mengundang .container ul.list-undangan {
+    list-style-type: circle;
+    font-size: 14px;
+    color: #666;
+}
+
+.turut-mengundang .container .list-undangan li {
+    margin-bottom: 5px;
+}
+
+.turut-mengundang .container h1 {
+    font-size: 23px;
+    margin-bottom: 1rem;
+    color: #989d92;
+    text-align: center;
+}
